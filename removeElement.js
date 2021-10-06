@@ -21,4 +21,4 @@ function removeElement(nums, val) {
     return rightIdx + 1;
 }
 
-console.log(removeElement([3, 2, 2, 3], 3))
+// console.log(removeElement([3, 2, 2, 3], 3))
