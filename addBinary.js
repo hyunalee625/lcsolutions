@@ -1,4 +1,4 @@
-funtion addBinary(a, b) {
+function addBinary(a, b) {
     let aReverse = a.split("").reverse().map(Number);
     let bReverse = b.split("").reverse().map(Number);
     let rest = 0;
