@@ -11,6 +11,28 @@ var letterCombo = function(digits) {
     };
 
 
+    if (digits === "") return [];   // base
+    let combos = [];
+
+    for (let i = digits.length - 1; i >= 0; i--) {
+        const num = digits[i];
+        if (combos.length === 0) {
+            combos = [...numLetter[num]];
+        } else {
+            const newCombo = [];
+            for (let j of numLetter[num]) {
+                for (let k of combos) {
+                    newCombo.push(j + k);
+                }
+            }
+
+            combos = newCombo;
+        }
+    }
+
+    return combos;
 }
 
 // digits range ['2', '9']
+
+console.log(letterCombo("23"))
