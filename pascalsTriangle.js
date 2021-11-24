@@ -18,3 +18,4 @@ function pascalsTriangle() {
 
     return arr;
 }
+

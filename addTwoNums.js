@@ -23,7 +23,7 @@ var addTwoNums = function(l1, l2) {
 
 // keep in mind if the sum of two numbers is >= 10, the first digit is "carried" to the next digit
 
-
+console.log(addTwoNums([2, 4, 3], [5, 6, 4]))
 
 
 
